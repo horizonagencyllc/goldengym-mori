@@ -1,0 +1,77 @@
+# ============================================================
+# robots.txt — Golden Gym Mori (goldengymmori.it)
+# Palestra a Mori (TN) — Vallagarina, vicino Rovereto
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# Permetti esplicitamente l'accesso agli asset (immagini, CSS, JS)
+Allow: /assets-golden-gym/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Blocca file di sistema
+Disallow: /.git/
+Disallow: /.claude/
+Disallow: /.DS_Store
+Disallow: /CNAME
+
+# Bot SEO comuni: tutti benvenuti
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /assets-golden-gym/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Blocca scraper / AI invasivi (commenta se vuoi farti indicizzare anche da loro)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Sitemap
+Sitemap: https://goldengymmori.it/sitemap.xml
+
+# Host preferenziale
+Host: https://goldengymmori.it

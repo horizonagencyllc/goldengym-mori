@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- HOMEPAGE -->
+  <url>
+    <loc>https://goldengymmori.it/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://goldengymmori.it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://goldengymmori.it/"/>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/panoramica.jpg</image:loc>
+      <image:title>Golden Gym Mori — Interno della palestra</image:title>
+      <image:caption>Vista panoramica della sala della palestra Golden Gym a Mori, in Vallagarina (TN)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/azione.jpg</image:loc>
+      <image:title>Allenamento in sala pesi</image:title>
+      <image:caption>Allenamento alla palestra Golden Gym di Mori, vicino Rovereto</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/sala.jpg</image:loc>
+      <image:title>Sala principale Golden Gym</image:title>
+      <image:caption>La sala della palestra Golden Gym Mori, Vallagarina</image:caption>
+    </image:image>
+  </url>
+
+  <!-- LA PALESTRA -->
+  <url>
+    <loc>https://goldengymmori.it/#palestra</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/panoramica.jpg</image:loc>
+      <image:title>Interno palestra Golden Gym Mori</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/federico.jpg</image:loc>
+      <image:title>Federico — Head Trainer Golden Gym</image:title>
+      <image:caption>Federico, head trainer della palestra Golden Gym Mori</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/sala.jpg</image:loc>
+      <image:title>Sala principale</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/panche.jpg</image:loc>
+      <image:title>Zona panche e bilancieri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/macchine.jpg</image:loc>
+      <image:title>Macchine isotoniche</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/attrezzi.jpg</image:loc>
+      <image:title>Attrezzi e zona sala</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/manubri.jpg</image:loc>
+      <image:title>Zona manubri</image:title>
+    </image:image>
+  </url>
+
+  <!-- DISCIPLINE -->
+  <url>
+    <loc>https://goldengymmori.it/#discipline</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/rack.jpg</image:loc>
+      <image:title>Sala pesi con rack</image:title>
+      <image:caption>Sala pesi della palestra Golden Gym Mori, vicino Rovereto</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/cardio.jpg</image:loc>
+      <image:title>Cardio Fitness Technogym</image:title>
+      <image:caption>Area cardio fitness con tapis roulant ed ellittiche Technogym</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://goldengymmori.it/assets-golden-gym/team.jpg</image:loc>
+      <image:title>Personal Training</image:title>
+      <image:caption>Personal training one-to-one alla palestra Golden Gym Mori</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ABBONAMENTI -->
+  <url>
+    <loc>https://goldengymmori.it/#abbonamenti</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- PRENOTA -->
+  <url>
+    <loc>https://goldengymmori.it/#prenota</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- PRIVACY -->
+  <url>
+    <loc>https://goldengymmori.it/#privacy</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- NOTE LEGALI -->
+  <url>
+    <loc>https://goldengymmori.it/#legal</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
