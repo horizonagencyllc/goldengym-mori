@@ -6,7 +6,7 @@
   <!-- HOMEPAGE -->
   <url>
     <loc>https://goldengymmori.it/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://goldengymmori.it/"/>
@@ -30,8 +30,8 @@
 
   <!-- LA PALESTRA -->
   <url>
-    <loc>https://goldengymmori.it/#palestra</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://goldengymmori.it/palestra/</loc>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -67,8 +67,8 @@
 
   <!-- DISCIPLINE -->
   <url>
-    <loc>https://goldengymmori.it/#discipline</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://goldengymmori.it/discipline/</loc>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -90,32 +90,32 @@
 
   <!-- ABBONAMENTI -->
   <url>
-    <loc>https://goldengymmori.it/#abbonamenti</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://goldengymmori.it/abbonamenti/</loc>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <!-- PRENOTA -->
   <url>
-    <loc>https://goldengymmori.it/#prenota</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://goldengymmori.it/prenota/</loc>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <!-- PRIVACY -->
   <url>
-    <loc>https://goldengymmori.it/#privacy</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://goldengymmori.it/privacy/</loc>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!-- NOTE LEGALI -->
   <url>
-    <loc>https://goldengymmori.it/#legal</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://goldengymmori.it/note-legali/</loc>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

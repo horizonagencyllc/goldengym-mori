@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E0F12">
+
+<!-- ===== SEO PRIMARY ===== -->
+<title>{{ page.seo_title }}</title>
+<meta name="description" content="{{ page.seo_desc }}">
+<meta name="keywords" content="palestra Mori, palestra Rovereto, palestra Vallagarina, palestra Trentino, centro fitness Mori, centro fitness Rovereto, sala pesi Rovereto, sala pesi Mori, personal trainer Mori, personal trainer Rovereto, personal trainer Vallagarina, palestra Nogaredo, palestra Villa Lagarina, palestra Isera, palestra Brentonico, palestra Ala, palestra Avio, palestra Pomarolo, palestra Nomi, palestre Trentino, cardio fitness Mori, Technogym Rovereto, dimagrimento Mori, tonificazione Rovereto, ricondizionamento post infortunio Trentino, Golden Gym Mori, Golden Gym Rovereto">
+<meta name="author" content="Horizon Agency">
+<meta name="publisher" content="Golden Gym Srl">
+<meta name="copyright" content="Golden Gym Srl">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="bingbot" content="index,follow">
+<meta name="rating" content="general">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="7 days">
+<meta name="language" content="Italian">
+<meta http-equiv="content-language" content="it-IT">
+
+<!-- ===== CANONICAL & ALTERNATES ===== -->
+<link rel="canonical" href="https://goldengymmori.it{{ page.url }}">
+<link rel="alternate" hreflang="it-IT" href="https://goldengymmori.it{{ page.url }}">
+<link rel="alternate" hreflang="x-default" href="https://goldengymmori.it{{ page.url }}">
+
+<!-- ===== GEO TAGS (SEO locale Vallagarina) ===== -->
+<meta name="geo.region" content="IT-TN">
+<meta name="geo.placename" content="Mori, Rovereto, Vallagarina, Trentino">
+<meta name="geo.position" content="45.851250;10.977778">
+<meta name="ICBM" content="45.851250, 10.977778">
+<meta name="DC.title" content="Golden Gym — Palestra Mori e Rovereto">
+
+<!-- ===== OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ===== -->
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="Golden Gym Mori">
+<meta property="og:title" content="{{ page.seo_title }}">
+<meta property="og:description" content="{{ page.seo_desc }}">
+<meta property="og:url" content="https://goldengymmori.it{{ page.url }}">
+<meta property="og:locale" content="it_IT">
+<meta property="og:image" content="https://goldengymmori.it/assets-golden-gym/panoramica.jpg">
+<meta property="og:image:secure_url" content="https://goldengymmori.it/assets-golden-gym/panoramica.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Golden Gym Mori — interno della palestra in Vallagarina">
+<meta property="business:contact_data:street_address" content="Via della Terra Nera 24/B">
+<meta property="business:contact_data:locality" content="Mori">
+<meta property="business:contact_data:region" content="TN">
+<meta property="business:contact_data:postal_code" content="38065">
+<meta property="business:contact_data:country_name" content="Italia">
+<meta property="business:contact_data:phone_number" content="+393482105688">
+<meta property="business:contact_data:website" content="https://goldengymmori.it/">
+<meta property="place:location:latitude" content="45.851250">
+<meta property="place:location:longitude" content="10.977778">
+
+<!-- ===== TWITTER / X CARD ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.seo_title }}">
+<meta name="twitter:description" content="{{ page.seo_desc }}">
+<meta name="twitter:image" content="https://goldengymmori.it/assets-golden-gym/panoramica.jpg">
+<meta name="twitter:image:alt" content="Golden Gym Mori — palestra in Vallagarina">
+
+<!-- ===== FAVICONS ===== -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230E0F12'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='800' fill='%23FFB400' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%230E0F12'/%3E%3Ctext x='90' y='124' font-family='Arial,sans-serif' font-size='96' font-weight='800' fill='%23FFB400' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+
+<!-- ===== PRELOAD / PERFORMANCE ===== -->
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link rel="preconnect" href="https://www.google.com" crossorigin>
+<link rel="dns-prefetch" href="https://wa.me">
+{% if page.page_id == 'home' %}<link rel="preload" as="image" href="/assets-golden-gym/azione.jpg" fetchpriority="high">{% endif %}
+<link href="https://fonts.bunny.net/css?family=sora:400,500,600,700,800|plus-jakarta-sans:400,500,600,700,800&display=swap" rel="stylesheet">
+
+<!-- ===== SCHEMA.ORG · HEALTH CLUB / LOCAL BUSINESS ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["HealthClub", "SportsActivityLocation", "LocalBusiness"],
+      "@id": "https://goldengymmori.it/#palestra",
+      "name": "Golden Gym Mori",
+      "alternateName": ["Golden Gym", "Palestra Golden Gym Mori", "Palestra Golden Gym Rovereto", "Centro Fitness Golden Gym"],
+      "legalName": "Golden Gym Srl",
+      "description": "Centro fitness e palestra in Vallagarina (TN). Sala pesi, cardio Technogym e personal training a Mori, comoda da Rovereto, Nogaredo, Villa Lagarina, Isera, Brentonico, Ala e Avio. Trainer dedicati, abbonamenti senza vincoli, prima prova gratuita.",
+      "url": "https://goldengymmori.it/",
+      "logo": "https://goldengymmori.it/assets-golden-gym/panoramica.jpg",
+      "image": [
+        "https://goldengymmori.it/assets-golden-gym/panoramica.jpg",
+        "https://goldengymmori.it/assets-golden-gym/sala.jpg",
+        "https://goldengymmori.it/assets-golden-gym/rack.jpg",
+        "https://goldengymmori.it/assets-golden-gym/cardio.jpg",
+        "https://goldengymmori.it/assets-golden-gym/macchine.jpg",
+        "https://goldengymmori.it/assets-golden-gym/manubri.jpg",
+        "https://goldengymmori.it/assets-golden-gym/panche.jpg",
+        "https://goldengymmori.it/assets-golden-gym/attrezzi.jpg",
+        "https://goldengymmori.it/assets-golden-gym/federico.jpg",
+        "https://goldengymmori.it/assets-golden-gym/team.jpg"
+      ],
+      "telephone": ["+39 348 210 5688", "+39 339 842 3054"],
+      "email": "info@goldengymmori.it",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Bank Transfer",
+      "vatID": "IT02244160228",
+      "taxID": "02244160228",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via della Terra Nera 24/B",
+        "addressLocality": "Mori",
+        "addressRegion": "TN",
+        "postalCode": "38065",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.851250,
+        "longitude": 10.977778
+      },
+      "hasMap": "https://maps.google.com/?q=Via+della+Terra+Nera+24%2FB+Mori+TN",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "21:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "12:30"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Mori", "sameAs": "https://it.wikipedia.org/wiki/Mori_(Italia)" },
+        { "@type": "City", "name": "Rovereto", "sameAs": "https://it.wikipedia.org/wiki/Rovereto" },
+        { "@type": "City", "name": "Nogaredo", "sameAs": "https://it.wikipedia.org/wiki/Nogaredo" },
+        { "@type": "City", "name": "Villa Lagarina", "sameAs": "https://it.wikipedia.org/wiki/Villa_Lagarina" },
+        { "@type": "City", "name": "Isera", "sameAs": "https://it.wikipedia.org/wiki/Isera" },
+        { "@type": "City", "name": "Brentonico", "sameAs": "https://it.wikipedia.org/wiki/Brentonico" },
+        { "@type": "City", "name": "Ala", "sameAs": "https://it.wikipedia.org/wiki/Ala_(Italia)" },
+        { "@type": "City", "name": "Avio", "sameAs": "https://it.wikipedia.org/wiki/Avio_(Italia)" },
+        { "@type": "City", "name": "Pomarolo" },
+        { "@type": "City", "name": "Nomi" },
+        { "@type": "City", "name": "Trambileno" },
+        { "@type": "AdministrativeArea", "name": "Vallagarina" },
+        { "@type": "AdministrativeArea", "name": "Provincia di Trento" }
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.851250,
+          "longitude": 10.977778
+        },
+        "geoRadius": "15000"
+      },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Sala pesi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Area cardio Technogym", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Personal training", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Spogliatoi con docce", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Parcheggio gratuito", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Sanificazione quotidiana", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Schede personalizzate", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Accesso disabili", "value": true }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Abbonamento Mensile",
+          "price": "50.00",
+          "priceCurrency": "EUR",
+          "url": "https://goldengymmori.it/abbonamenti/",
+          "availability": "https://schema.org/InStock",
+          "category": "Palestra"
+        },
+        {
+          "@type": "Offer",
+          "name": "Abbonamento 3 Mesi",
+          "price": "130.00",
+          "priceCurrency": "EUR",
+          "url": "https://goldengymmori.it/abbonamenti/",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Abbonamento 6 Mesi",
+          "price": "240.00",
+          "priceCurrency": "EUR",
+          "url": "https://goldengymmori.it/abbonamenti/",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Abbonamento Annuale 12 Mesi",
+          "price": "400.00",
+          "priceCurrency": "EUR",
+          "url": "https://goldengymmori.it/abbonamenti/",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pacchetto 10 Sedute",
+          "price": "65.00",
+          "priceCurrency": "EUR",
+          "url": "https://goldengymmori.it/abbonamenti/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Personal Training — Pacchetto 10 Sedute",
+          "price": "300.00",
+          "priceCurrency": "EUR",
+          "url": "https://goldengymmori.it/abbonamenti/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Tabella di allenamento personalizzata",
+          "price": "25.00",
+          "priceCurrency": "EUR",
+          "url": "https://goldengymmori.it/abbonamenti/"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi Golden Gym Mori",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sala Pesi",
+              "description": "Bilancieri, manubri e macchine isotoniche per forza, massa muscolare e tonificazione. Adatta a tutti i livelli, dalla principiante all'avanzato.",
+              "serviceType": "Allenamento con i pesi",
+              "areaServed": ["Mori", "Rovereto", "Vallagarina"]
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cardio Fitness",
+              "description": "Tapis roulant, ellittiche e cyclette Technogym per dimagrimento, fiato e salute del cuore.",
+              "serviceType": "Allenamento cardiovascolare",
+              "areaServed": ["Mori", "Rovereto", "Vallagarina"]
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Personal Training",
+              "description": "Un trainer dedicato uno-a-uno per obiettivi specifici, ricondizionamento post-infortunio e risultati rapidi.",
+              "serviceType": "Personal training",
+              "areaServed": ["Mori", "Rovereto", "Vallagarina"]
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "56",
+        "reviewCount": "56"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Vilson Brahimi" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Se volete rimettervi in forma questa è la palestra che fa per voi. Il personale è professionale, cordiale e disponibile.",
+          "publisher": { "@type": "Organization", "name": "Google" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Manuel Tripiciano" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Tutto ciò che serve in un ambiente super pulito e ordinato. Trainer competente e motivante. Difficile aggiungere altro. Bravi!",
+          "publisher": { "@type": "Organization", "name": "Google" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Andrea P." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Istruttori gentilissimi e preparati. Mi hanno fatto una scheda tenendo conto di un vecchio problema alla spalla. Mi sono sentito ascoltato.",
+          "publisher": { "@type": "Organization", "name": "Google" }
+        }
+      ],
+      "employee": {
+        "@type": "Person",
+        "name": "Federico",
+        "jobTitle": "Head Trainer & Istruttore di Sala",
+        "knowsAbout": ["Costruzione muscolare", "Dimagrimento", "Postura", "Ricondizionamento post infortunio", "Allenamento Over 50"],
+        "worksFor": { "@id": "https://goldengymmori.it/#palestra" }
+      },
+      "sameAs": [
+        "https://www.instagram.com/",
+        "https://www.facebook.com/",
+        "https://maps.google.com/?q=Via+della+Terra+Nera+24%2FB+Mori+TN"
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Prenota una prova gratuita",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://goldengymmori.it/prenota/",
+          "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+        },
+        "result": { "@type": "Reservation", "name": "Prova gratuita Golden Gym" }
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://goldengymmori.it/#organization",
+      "name": "Golden Gym Srl",
+      "url": "https://goldengymmori.it/",
+      "logo": "https://goldengymmori.it/assets-golden-gym/panoramica.jpg",
+      "vatID": "IT02244160228",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via della Terra Nera 24/B",
+        "addressLocality": "Mori",
+        "addressRegion": "TN",
+        "postalCode": "38065",
+        "addressCountry": "IT"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+39 348 210 5688",
+          "contactType": "customer service",
+          "availableLanguage": ["Italian"],
+          "areaServed": "IT"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+39 339 842 3054",
+          "contactType": "customer service",
+          "availableLanguage": ["Italian"],
+          "areaServed": "IT"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://goldengymmori.it/#website",
+      "url": "https://goldengymmori.it/",
+      "name": "Golden Gym Mori — Palestra in Vallagarina",
+      "inLanguage": "it-IT",
+      "publisher": { "@id": "https://goldengymmori.it/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://goldengymmori.it/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://goldengymmori.it/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Come funziona la prima entrata gratuita alla palestra Golden Gym di Mori?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vieni in palestra a Mori (TN), ti facciamo fare un giro completo della sala, ti spieghiamo come lavoriamo e — se vuoi — provi qualche macchinario. Massimo un'oretta, senza alcun obbligo di iscrizione. Comoda da Rovereto e da tutta la Vallagarina."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Devo firmare un contratto annuale per iscrivermi alla palestra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Lavoriamo con abbonamenti mensili, trimestrali, semestrali e annuali, senza penali né rinnovi automatici nascosti. Vuoi smettere o sospendere per le ferie? Basta dircelo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sono un principiante assoluto. Posso iniziare ad allenarmi da Golden Gym?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anzi, è il caso più comune da noi. Federico, il nostro head trainer, spiega ogni esercizio dall'inizio e ti accompagna in sala finché non ti senti sicuro. Non devi sapere nulla in partenza."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso allenarmi in palestra se ho avuto un infortunio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, il ricondizionamento post-infortunio è proprio uno dei nostri ambiti di specializzazione. Costruiamo schede che tengono conto del tuo problema specifico e, se serve, ci coordiniamo con il tuo fisioterapista in Vallagarina."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come posso pagare l'abbonamento alla palestra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Accettiamo contanti, bancomat, carte di credito e bonifico. Per i piani trimestrali, su richiesta, possiamo valutare insieme una soluzione rateale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto costa l'abbonamento mensile alla palestra Golden Gym Mori?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'abbonamento mensile costa 50€ al mese e include accesso libero a tutta la sala, avvio con un trainer, spogliatoi e docce. Nessun rinnovo automatico. A questo si aggiunge una quota associativa una tantum di 25€."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Da Rovereto quanto tempo ci vuole per arrivare alla palestra Golden Gym di Mori?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da Rovereto centro alla nostra palestra in Via della Terra Nera 24/B a Mori sono circa 8 minuti d'auto (5 km). Siamo facilmente raggiungibili anche da Nogaredo, Villa Lagarina, Isera, Brentonico, Ala e Avio con parcheggio comodo nei pressi dell'ingresso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La palestra è aperta il sabato e la domenica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Golden Gym Mori è aperta dal lunedì al venerdì dalle 9:00 alle 21:30 con orario continuato, e il sabato mattina dalle 10:00 alle 12:30. La domenica siamo chiusi."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://goldengymmori.it/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://goldengymmori.it/" },
+        { "@type": "ListItem", "position": 2, "name": "La Palestra", "item": "https://goldengymmori.it/palestra/" },
+        { "@type": "ListItem", "position": 3, "name": "Discipline", "item": "https://goldengymmori.it/discipline/" },
+        { "@type": "ListItem", "position": 4, "name": "Abbonamenti", "item": "https://goldengymmori.it/abbonamenti/" },
+        { "@type": "ListItem", "position": 5, "name": "Prenota", "item": "https://goldengymmori.it/prenota/" }
+      ]
+    }
+  ]
+}
+</script>
+
+{% include head_styles.html %}
+</head>
+<body>
+
+<!-- ===================== TOPBAR ===================== -->
+<div class="topbar">
+  <div class="shell">
+    <span class="tb-hide">📍 Via della Terra Nera 24/B — Mori (TN)</span>
+    <div style="display:flex;align-items:center;gap:18px">
+      <span class="tb-rate"><span class="s">★★★★★</span> <b style="color:#fff">4,5</b> <span class="tb-hide">su Google</span></span>
+      <a href="tel:+393482105688">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        348 210 5688
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="shell">
+    <a href="/" class="logo" aria-label="Golden Gym home">
+      <span class="logo-mark"><span>G</span></span>
+      <span class="logo-txt"><b>Golden Gym</b><small>Mori · Trentino</small></span>
+    </a>
+    <nav class="nav-menu" aria-label="Menu">
+      <a href="/"{% if page.page_id == 'home' %} class="on"{% endif %}>Home</a>
+      <a href="/palestra/"{% if page.page_id == 'palestra' %} class="on"{% endif %}>La Palestra</a>
+      <a href="/discipline/"{% if page.page_id == 'discipline' %} class="on"{% endif %}>Discipline</a>
+      <a href="/abbonamenti/"{% if page.page_id == 'abbonamenti' %} class="on"{% endif %}>Abbonamenti</a>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        348 210 5688
+      </span>
+      <a href="/prenota/" class="btn btn-gold">Prenota la prova</a>
+      <button class="burger" id="burger" aria-label="Apri menu"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== DRAWER ===================== -->
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav class="d-menu" aria-label="Menu mobile">
+    <a href="/" class="d-link{% if page.page_id == 'home' %} on{% endif %}">Home <span>01</span></a>
+    <a href="/palestra/" class="d-link{% if page.page_id == 'palestra' %} on{% endif %}">La Palestra <span>02</span></a>
+    <a href="/discipline/" class="d-link{% if page.page_id == 'discipline' %} on{% endif %}">Discipline <span>03</span></a>
+    <a href="/abbonamenti/" class="d-link{% if page.page_id == 'abbonamenti' %} on{% endif %}">Abbonamenti <span>04</span></a>
+    <a href="/prenota/" class="d-link{% if page.page_id == 'prenota' %} on{% endif %}">Prenota <span>05</span></a>
+  </nav>
+  <div class="d-foot">
+    <a href="tel:+393482105688" class="btn btn-ghost">Chiama 348 210 5688</a>
+    <a href="/prenota/" class="btn btn-gold">Prenota la prova gratuita</a>
+  </div>
+</div>
+
+<main id="top">
+{{ content }}
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="shell">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="logo">
+          <span class="logo-mark"><span>G</span></span>
+          <span class="logo-txt"><b>Golden Gym</b><small>Mori · Trentino</small></span>
+        </div>
+        <p>Il centro fitness della Vallagarina dove ti senti davvero a casa. Trainer dedicati, sala curata, abbonamenti senza sorprese.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://wa.me/393482105688" data-wa="Ciao! Vorrei informazioni su Golden Gym." aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Pagine</h5>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/palestra/">La Palestra</a></li>
+          <li><a href="/discipline/">Discipline</a></li>
+          <li><a href="/abbonamenti/">Abbonamenti</a></li>
+          <li><a href="/prenota/">Prenota</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contatti</h5>
+        <ul>
+          <li><a href="tel:+393482105688">348 210 5688</a></li>
+          <li><a href="tel:+393398423054">339 842 3054</a></li>
+          <li><a href="https://wa.me/393482105688" data-wa="Ciao! Vorrei informazioni su Golden Gym.">Scrivici su WhatsApp</a></li>
+          <li><a href="https://maps.google.com/?q=Via+della+Terra+Nera+24%2FB+Mori+TN" target="_blank" rel="noopener">Indicazioni stradali</a></li>
+        </ul>
+        <p style="margin-top:14px">Via della Terra Nera 24/B<br>38065 Mori (TN)<br>P.IVA 02244160228<br>Lun—Ven 9—21:30 · Sab 10—12:30</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span class="legal">
+        <span>© <span id="year">2026</span> Golden Gym Srl — P.IVA 02244160228 — Mori (TN)</span>
+        <a href="/privacy/">Privacy &amp; Cookie</a>
+        <a href="/note-legali/">Note legali</a>
+      </span>
+      <span class="foot-credit">Realizzato da
+        <a href="https://horizonagency.it" target="_blank" rel="noopener" aria-label="Horizon Agency">
+          <span class="hz" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 16.4a8 8 0 0 1 16 0"/>
+              <line x1="2.4" y1="16.4" x2="21.6" y2="16.4"/>
+            </svg>
+          </span>
+          Horizon Agency
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== WHATSAPP FAB ===================== -->
+<div class="wa-fab">
+  <a href="https://wa.me/393482105688" data-wa="Ciao! Vorrei informazioni su Golden Gym." aria-label="Scrivici su WhatsApp">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></span>
+    <span class="tx">Scrivici su WhatsApp</span>
+  </a>
+</div>
+
+<!-- ===================== SELETTORE WHATSAPP ===================== -->
+<div class="wa-modal" id="waModal" aria-hidden="true">
+  <div class="wa-modal-bg" data-wa-close></div>
+  <div class="wa-card" role="dialog" aria-modal="true" aria-label="Scegli un contatto WhatsApp">
+    <button class="wa-x" data-wa-close aria-label="Chiudi">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="wa-head">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></span>
+      <h3>Scrivici su WhatsApp</h3>
+      <p>Scegli con quale numero vuoi parlare: ti rispondiamo subito.</p>
+    </div>
+    <div class="wa-opts">
+      <button class="wa-opt" data-wa-num="393482105688">
+        <span class="oic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="otx"><b>348 210 5688</b><span>Tocca per aprire la chat</span></span>
+        <span class="ogo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </button>
+      <button class="wa-opt" data-wa-num="393398423054">
+        <span class="oic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="otx"><b>339 842 3054</b><span>Tocca per aprire la chat</span></span>
+        <span class="ogo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== COOKIE BAR ===================== -->
+<div class="cookie" id="cookieBar" aria-hidden="true">
+  <div class="cookie-head">
+    <span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="9" r="1"/><circle cx="15" cy="14" r="1"/><circle cx="9.5" cy="15" r="1"/></svg></span>
+    <b>Cookie</b>
+  </div>
+  <p>Usiamo solo cookie tecnici necessari al funzionamento del sito. La mappa è fornita da Google. Maggiori dettagli nella <a href="/privacy/">Privacy &amp; Cookie Policy</a>.</p>
+  <div class="cookie-act">
+    <button class="btn btn-ghost" id="cookieMore">Dettagli</button>
+    <button class="btn btn-gold" id="cookieOk">Ho capito</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---- legacy hash redirect (vecchi link tipo #palestra) ---- */
+  var HASH_MAP={
+    '#home':'/',
+    '#palestra':'/palestra/',
+    '#discipline':'/discipline/',
+    '#abbonamenti':'/abbonamenti/',
+    '#prenota':'/prenota/',
+    '#privacy':'/privacy/',
+    '#legal':'/note-legali/'
+  };
+  if(location.hash && HASH_MAP[location.hash] && location.pathname==='/'){
+    var target=HASH_MAP[location.hash];
+    if(target!=='/' || location.hash!=='#home'){
+      location.replace(target);
+      return;
+    }
+  }
+
+  var doc=document, body=doc.body;
+
+  /* ---- reveal observer ---- */
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12,rootMargin:'0px 0px -7% 0px'});
+  function observeReveals(scope){
+    (scope||doc).querySelectorAll('.rv:not(.in)').forEach(function(el){ io.observe(el); });
+  }
+
+  /* ---- count-up ---- */
+  function countUp(el){
+    var t=parseInt(el.getAttribute('data-count'),10), s=performance.now(), d=1500;
+    function tick(n){
+      var p=Math.min((n-s)/d,1);
+      el.textContent=Math.round(t*(1-Math.pow(1-p,3)));
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var countObs=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ countUp(e.target); countObs.unobserve(e.target); } });
+  },{threshold:.6});
+
+  /* ---- nav sticky ---- */
+  var nav=doc.getElementById('nav');
+  window.addEventListener('scroll',function(){
+    nav.classList.toggle('stuck',window.scrollY>10);
+  },{passive:true});
+
+  /* ---- mobile menu (pannello compatto) ---- */
+  var burger=doc.getElementById('burger'), drawer=doc.getElementById('drawer'),
+      backdrop=doc.getElementById('menuBackdrop');
+  function setMenu(open){
+    body.classList.toggle('menu',open);
+    drawer.setAttribute('aria-hidden',open?'false':'true');
+    burger.setAttribute('aria-label',open?'Chiudi menu':'Apri menu');
+    if(open){
+      drawer.style.top=Math.max(nav.getBoundingClientRect().bottom+8,14)+'px';
+    }
+  }
+  burger.addEventListener('click',function(){ setMenu(!body.classList.contains('menu')); });
+  backdrop.addEventListener('click',function(){ setMenu(false); });
+  doc.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&body.classList.contains('menu')) setMenu(false);
+  });
+
+  /* ---- faq ---- */
+  doc.querySelectorAll('.faq-item').forEach(function(it){
+    var q=it.querySelector('.faq-q'), a=it.querySelector('.faq-a');
+    q.addEventListener('click',function(){
+      var open=it.classList.contains('open');
+      doc.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight=null;
+      });
+      if(!open){ it.classList.add('open'); a.style.maxHeight=a.scrollHeight+'px'; }
+    });
+  });
+
+  /* ---- booking chips ---- */
+  doc.querySelectorAll('.chips').forEach(function(group){
+    group.addEventListener('click',function(ev){
+      var c=ev.target.closest('.chip'); if(!c) return;
+      group.querySelectorAll('.chip').forEach(function(x){ x.classList.remove('sel'); });
+      c.classList.add('sel');
+    });
+  });
+  function chipVal(name){
+    var sel=doc.querySelector('.chips[data-chip="'+name+'"] .chip.sel');
+    return sel?sel.getAttribute('data-val'):'—';
+  }
+
+  /* ---- date min today ---- */
+  var dEl=doc.getElementById('f-date');
+  if(dEl){
+    var t=new Date(); t.setDate(t.getDate()+1);
+    dEl.min=new Date().toISOString().split('T')[0];
+    dEl.value=t.toISOString().split('T')[0];
+  }
+
+  /* ---- selettore WhatsApp (2 numeri) ---- */
+  var waModal=doc.getElementById('waModal');
+  var waText='Ciao! Vorrei informazioni su Golden Gym.';
+  var waBooking=false, lastBkTxt='';
+  function openWa(text,fromBooking){
+    waText=text||'Ciao! Vorrei informazioni su Golden Gym.';
+    waBooking=!!fromBooking;
+    waModal.classList.add('show');
+    waModal.setAttribute('aria-hidden','false');
+  }
+  function closeWa(){
+    waModal.classList.remove('show');
+    waModal.setAttribute('aria-hidden','true');
+  }
+
+  /* ---- booking submit -> whatsapp ---- */
+  var submitBtn=doc.getElementById('bkSubmit');
+  if(submitBtn){
+    submitBtn.addEventListener('click',function(){
+      var name=doc.getElementById('f-name'), phone=doc.getElementById('f-phone');
+      var ok=true;
+      [name,phone].forEach(function(f){
+        if(!f.value.trim()){ f.classList.add('err'); ok=false; }
+        else f.classList.remove('err');
+      });
+      if(!ok){ name.value.trim()||name.focus(); return; }
+
+      var date=doc.getElementById('f-date').value;
+      var msg=doc.getElementById('f-msg').value.trim();
+      var dDate=date?new Date(date).toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long'}):'da concordare';
+
+      var txt='Ciao Golden Gym! Vorrei prenotare una prova gratuita.\n\n'+
+        '• Nome: '+name.value.trim()+'\n'+
+        '• Telefono: '+phone.value.trim()+'\n'+
+        '• Interesse: '+chipVal('interest')+'\n'+
+        '• Obiettivo: '+chipVal('goal')+'\n'+
+        '• Giorno preferito: '+dDate+'\n'+
+        '• Fascia oraria: '+chipVal('time')+'\n'+
+        (msg?'• Note: '+msg+'\n':'');
+
+      lastBkTxt=txt;
+      openWa(txt,true);
+    });
+  }
+  var bkWaBtn=doc.getElementById('bkWaLink');
+  if(bkWaBtn) bkWaBtn.addEventListener('click',function(){ openWa(lastBkTxt,false); });
+
+  doc.addEventListener('click',function(ev){
+    var trig=ev.target.closest('[data-wa]');
+    if(trig){ ev.preventDefault(); openWa(trig.getAttribute('data-wa'),false); return; }
+    if(ev.target.closest('[data-wa-close]')){ closeWa(); return; }
+    var opt=ev.target.closest('.wa-opt');
+    if(opt){
+      var num=opt.getAttribute('data-wa-num');
+      window.open('https://wa.me/'+num+'?text='+encodeURIComponent(waText),'_blank');
+      closeWa();
+      if(waBooking){
+        var f=doc.getElementById('bkForm'), s=doc.getElementById('bkSuccess');
+        if(f&&s){ f.style.display='none'; s.classList.add('show'); window.scrollTo({top:0,behavior:'smooth'}); }
+        waBooking=false;
+      }
+    }
+  });
+  doc.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&waModal.classList.contains('show')) closeWa();
+  });
+
+  /* ---- cookie bar ---- */
+  var cookieBar=doc.getElementById('cookieBar');
+  if(cookieBar){
+    var CKEY='gg_cookie_ok', seen=false;
+    try{ seen=!!localStorage.getItem(CKEY); }catch(e){}
+    if(!seen){
+      body.classList.add('cookie-on');
+      setTimeout(function(){
+        cookieBar.classList.add('show');
+        cookieBar.setAttribute('aria-hidden','false');
+      },900);
+    }
+    var dismissCookie=function(){
+      cookieBar.classList.remove('show');
+      cookieBar.setAttribute('aria-hidden','true');
+      body.classList.remove('cookie-on');
+      try{ localStorage.setItem(CKEY,'1'); }catch(e){}
+    };
+    var ckOk=doc.getElementById('cookieOk'), ckMore=doc.getElementById('cookieMore');
+    if(ckOk) ckOk.addEventListener('click',dismissCookie);
+    if(ckMore) ckMore.addEventListener('click',function(){ location.href='/privacy/'; });
+  }
+
+  /* ---- hours today ---- */
+  var day=new Date().getDay();
+  doc.querySelectorAll('#hours li[data-day]').forEach(function(li){
+    if(parseInt(li.dataset.day,10)===day) li.classList.add('today');
+  });
+
+  /* ---- year ---- */
+  var yEl=doc.getElementById('year');
+  if(yEl) yEl.textContent=new Date().getFullYear();
+
+  /* ---- count-up triggers ---- */
+  doc.querySelectorAll('[data-count]').forEach(function(el){
+    el.textContent='0'; countObs.observe(el);
+  });
+
+  /* ---- init reveals ---- */
+  observeReveals(doc);
+})();
+</script>
+
+</body>
+</html>

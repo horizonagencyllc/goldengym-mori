@@ -1,0 +1,16 @@
+title: Golden Gym Mori
+description: Palestra a Mori (TN) — Vallagarina, vicino Rovereto. Sala pesi, cardio Technogym e personal training.
+url: https://goldengymmori.it
+lang: it-IT
+
+exclude:
+  - .claude
+  - .DS_Store
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+keep_files:
+  - assets-golden-gym
