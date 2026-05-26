@@ -298,13 +298,7 @@
           "publisher": { "@type": "Organization", "name": "Google" }
         }
       ],
-      "employee": {
-        "@type": "Person",
-        "name": "Federico",
-        "jobTitle": "Head Trainer & Istruttore di Sala",
-        "knowsAbout": ["Costruzione muscolare", "Dimagrimento", "Postura", "Ricondizionamento post infortunio", "Allenamento Over 50"],
-        "worksFor": { "@id": "https://goldengymmori.it/#palestra" }
-      },
+      "employee": { "@id": "https://goldengymmori.it/#federico" },
       "sameAs": [
         "https://www.instagram.com/",
         "https://www.facebook.com/",
@@ -368,6 +362,72 @@
         },
         "query-input": "required name=search_term_string"
       }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://goldengymmori.it{{ page.url }}#webpage",
+      "url": "https://goldengymmori.it{{ page.url }}",
+      "name": "{{ page.seo_title }}",
+      "description": "{{ page.seo_desc }}",
+      "inLanguage": "it-IT",
+      "isPartOf": { "@id": "https://goldengymmori.it/#website" },
+      "about": { "@id": "https://goldengymmori.it/#palestra" },
+      "primaryImageOfPage": "https://goldengymmori.it/assets-golden-gym/panoramica.jpg",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".faq-a", ".hero-sub"]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://goldengymmori.it/#federico",
+      "name": "Federico",
+      "givenName": "Federico",
+      "jobTitle": "Head Trainer & Istruttore di Sala",
+      "description": "Head trainer della palestra Golden Gym di Mori, a 5 km da Rovereto. Istruttore di sala diplomato, specializzato in costruzione muscolare, dimagrimento, riequilibrio posturale, ricondizionamento dopo infortunio e allenamento per over 50. Lavora con principianti assoluti e con sportivi avanzati, costruendo schede personalizzate e seguendo le persone direttamente in sala.",
+      "image": "https://goldengymmori.it/assets-golden-gym/federico.jpg",
+      "knowsAbout": [
+        "Personal training",
+        "Costruzione muscolare",
+        "Ipertrofia",
+        "Dimagrimento e ricomposizione corporea",
+        "Allenamento della forza",
+        "Postura e riequilibrio posturale",
+        "Ricondizionamento post infortunio",
+        "Allenamento Over 50",
+        "Schede di allenamento personalizzate",
+        "Allenamento per principianti"
+      ],
+      "knowsLanguage": ["it-IT"],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Diploma di Istruttore di Sala Fitness"
+      },
+      "worksFor": { "@id": "https://goldengymmori.it/#palestra" },
+      "memberOf": { "@id": "https://goldengymmori.it/#palestra" },
+      "workLocation": {
+        "@type": "Place",
+        "name": "Golden Gym Mori",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via della Terra Nera 24/B",
+          "addressLocality": "Mori",
+          "addressRegion": "TN",
+          "postalCode": "38065",
+          "addressCountry": "IT"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Mori" },
+        { "@type": "City", "name": "Rovereto" },
+        { "@type": "City", "name": "Nogaredo" },
+        { "@type": "City", "name": "Villa Lagarina" },
+        { "@type": "City", "name": "Isera" },
+        { "@type": "City", "name": "Brentonico" },
+        { "@type": "City", "name": "Ala" },
+        { "@type": "City", "name": "Avio" },
+        { "@type": "AdministrativeArea", "name": "Vallagarina" }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -435,6 +495,54 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Golden Gym Mori è aperta dal lunedì al venerdì dalle 9:00 alle 21:30 con orario continuato, e il sabato mattina dalle 10:00 alle 12:30. La domenica siamo chiusi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual è la palestra migliore vicino a Rovereto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Golden Gym Mori è la palestra di riferimento per chi vive a Rovereto e in Vallagarina: 4,5★ su Google con 56 recensioni reali, sala pesi e cardio Technogym, trainer dedicati e abbonamenti mensili senza vincoli da 50€. Si trova in Via della Terra Nera 24/B a Mori (TN), a soli 5 km e 8 minuti d'auto dal centro di Rovereto, con parcheggio gratuito davanti all'ingresso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dove mi alleno se vivo in Vallagarina?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se vivi in Vallagarina — Rovereto, Mori, Nogaredo, Villa Lagarina, Isera, Brentonico, Ala o Avio — Golden Gym Mori è raggiungibile in 5–15 minuti d'auto da quasi tutti i comuni. Parcheggio gratuito davanti all'ingresso, sala curata, trainer presente in sala. Aperta lunedì-venerdì 9:00–21:30 e sabato mattina 10:00–12:30."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto costa allenarsi in palestra a Rovereto al mese?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'abbonamento mensile alla palestra Golden Gym Mori (a 5 km dal centro di Rovereto) costa 50€ al mese e include accesso libero a sala pesi e area cardio Technogym, spogliatoi con docce e l'avvio con un trainer. Si aggiunge una quota associativa una tantum di 25€. Sono disponibili anche pacchetti trimestrali (130€), semestrali (240€) e annuali (400€), tutti senza rinnovo automatico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Esiste un personal trainer a Rovereto specializzato in ricondizionamento dopo infortuni?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Federico, head trainer di Golden Gym Mori (a 5 km da Rovereto), è specializzato nel ricondizionamento post-infortunio: costruisce schede personalizzate che tengono conto del problema specifico (spalla, ginocchio, schiena, ecc.) e si coordina, quando serve, con il tuo fisioterapista in Vallagarina. Un pacchetto da 10 sedute di personal training costa 300€."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto è lontana la palestra Golden Gym dal centro di Rovereto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Golden Gym dista circa 5 km dal centro di Rovereto, percorribili in 8 minuti d'auto tramite la SS240. L'indirizzo è Via della Terra Nera 24/B, 38065 Mori (TN), con parcheggio gratuito davanti all'ingresso e fermata dell'autobus a pochi metri."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual è la migliore palestra economica tra Mori e Rovereto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Golden Gym Mori è tra le palestre più convenienti della zona Mori-Rovereto: 50€ al mese per l'abbonamento standard, 65€ per un pacchetto da 10 ingressi, nessun rinnovo automatico e nessuna penale se decidi di smettere. Include sala pesi completa, cardio Technogym, avvio con un trainer e spogliatoi con docce."
           }
         }
       ]
